@@ -29,7 +29,7 @@ export default function Content() {
         <div className="max-w-[1200px] h-[780px] w-full m-auto py-16 px-4 relative group">
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].image})` }}
-            className="w-full h-full shadow-2xl rounded-2xl bg-center bg-cover duration-500 animate-pulse "
+            className="w-full h-full shadow-2xl rounded-2xl bg-center bg-cover duration-500 hover:scale-75 "
           ></div>
           <div>
             <h1 className="flex absolute top-[20%] justify-center py-2 text-8xl font-extrabold text-slate-400">

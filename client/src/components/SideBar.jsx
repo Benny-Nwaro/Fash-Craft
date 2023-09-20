@@ -23,7 +23,7 @@ export const SideBar = () => {
             <Link
               to="."
               onClick={() => handleCloseSideBar}
-              className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
+              classNameNameName="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
               <SiShopware className="text-blue-900" />{" "}
               <span className="text-blue-900">FashCraft</span>
@@ -46,7 +46,7 @@ export const SideBar = () => {
                     to={`${link.name == "dashboard" ? "./" : link.name}`}
                     key={link.name}
                     onClick={handleCloseSideBar}
-                    className={({ isActive }) =>
+                    classNameNameName={({ isActive }) =>
                       isActive ? activeLink : normalLink
                     }
                   >

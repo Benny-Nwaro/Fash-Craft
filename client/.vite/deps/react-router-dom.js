@@ -805,9 +805,9 @@ var json = function json2(data, init) {
     headers
   }));
 };
-var AbortedDeferredError = class extends Error {
+var AbortedDeferredError = classNameName extends Error {
 };
-var DeferredData = class {
+var DeferredData = classNameName {
   constructor(data, responseInit) {
     this.pendingKeysSet = /* @__PURE__ */ new Set();
     this.subscribers = /* @__PURE__ */ new Set();
@@ -965,7 +965,7 @@ var redirectDocument = (url, init) => {
   response.headers.set("X-Remix-Reload-Document", "true");
   return response;
 };
-var ErrorResponse = class {
+var ErrorResponse = classNameName {
   constructor(status, statusText, data, internal) {
     if (internal === void 0) {
       internal = false;
@@ -3280,7 +3280,7 @@ function DefaultErrorComponent() {
   }, stack) : null, devInfo);
 }
 var defaultErrorElement = React.createElement(DefaultErrorComponent, null);
-var RenderErrorBoundary = class extends React.Component {
+var RenderErrorBoundary = classNameName extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -3799,7 +3799,7 @@ var AwaitRenderStatus = function(AwaitRenderStatus2) {
 }(AwaitRenderStatus || {});
 var neverSettledPromise = new Promise(() => {
 });
-var AwaitErrorBoundary = class extends React.Component {
+var AwaitErrorBoundary = classNameName extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -4127,7 +4127,7 @@ function getFormSubmissionInfo(target, basename) {
   };
 }
 var _excluded = ["onClick", "relative", "reloadDocument", "replace", "state", "target", "to", "preventScrollReset"];
-var _excluded2 = ["aria-current", "caseSensitive", "className", "end", "style", "to", "children"];
+var _excluded2 = ["aria-current", "caseSensitive", "classNameNameName", "end", "style", "to", "children"];
 var _excluded3 = ["reloadDocument", "replace", "state", "method", "action", "onSubmit", "submit", "relative", "preventScrollReset"];
 function createBrowserRouter(routes, opts) {
   return createRouter({
@@ -4366,7 +4366,7 @@ var NavLink = React2.forwardRef(function NavLinkWithRef(_ref5, ref) {
   let {
     "aria-current": ariaCurrentProp = "page",
     caseSensitive = false,
-    className: classNameProp = "",
+    classNameNameName: classNameNameNameProp = "",
     end = false,
     style: styleProp,
     to,
@@ -4391,14 +4391,14 @@ var NavLink = React2.forwardRef(function NavLinkWithRef(_ref5, ref) {
   let isActive = locationPathname === toPathname || !end && locationPathname.startsWith(toPathname) && locationPathname.charAt(toPathname.length) === "/";
   let isPending = nextLocationPathname != null && (nextLocationPathname === toPathname || !end && nextLocationPathname.startsWith(toPathname) && nextLocationPathname.charAt(toPathname.length) === "/");
   let ariaCurrent = isActive ? ariaCurrentProp : void 0;
-  let className;
-  if (typeof classNameProp === "function") {
-    className = classNameProp({
+  let classNameNameName;
+  if (typeof classNameNameNameProp === "function") {
+    classNameNameName = classNameNameNameProp({
       isActive,
       isPending
     });
   } else {
-    className = [classNameProp, isActive ? "active" : null, isPending ? "pending" : null].filter(Boolean).join(" ");
+    classNameNameName = [classNameNameNameProp, isActive ? "active" : null, isPending ? "pending" : null].filter(Boolean).join(" ");
   }
   let style = typeof styleProp === "function" ? styleProp({
     isActive,
@@ -4406,7 +4406,7 @@ var NavLink = React2.forwardRef(function NavLinkWithRef(_ref5, ref) {
   }) : styleProp;
   return React2.createElement(Link, _extends3({}, rest, {
     "aria-current": ariaCurrent,
-    className,
+    classNameNameName,
     ref,
     style,
     to
