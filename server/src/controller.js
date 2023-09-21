@@ -7,7 +7,7 @@ import {
   checkUserExistenceQuery,
   getStaffsPositionsQuery,
 } from "./queries.js";
-import * as bcrypt from "bcrypt";
+import bcrypt from "bcrypt";
 const testRoute = async (req, res) => {
   res.status(200).json({ message: "Testing successful" });
 };
@@ -453,9 +453,4 @@ const addStaff = async (req, res) => {
   );
 };
 
-export {
-  testRoute,
-  addStaff,
-  getCompanyPositions,
-  addCustomer,
-};
+export { testRoute, addStaff, getCompanyPositions, addCustomer };

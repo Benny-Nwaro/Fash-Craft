@@ -18,6 +18,16 @@ VALUES
     ('user1', 'password1', 'user1@example.com', 'John', 'Doe', '1990-01-01', 'Male'),
     ('user2', 'password2', 'user2@example.com', 'Jane', 'Smith', '1985-03-15', 'Female');
 
+
+-- Create customers
+INSERT INTO customers (users_id, staff_id,  phone_number, customer_address, loyalty_points, is_verified)
+VALUES
+    (56789, 1234, '08167203767', 'Lugbe Abuja. Nigeria', 12, FALSE),
+(5587, 9870, '08167203767', 'Asokoro Abuja. Nigeria', 22, TRUE);
+
+
+
+
 -- Create staff records related to users
 INSERT INTO staffs (user_id, position_id, address, job_description, salary, date_employed, phone_number)
 VALUES
