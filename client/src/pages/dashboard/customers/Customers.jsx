@@ -1,5 +1,20 @@
 import React, { useEffect, useState } from "react";
 export const Customers = () => {
+  const [allCustomers, setAllCustomers] = useState([]);
+  const getCustomers = async () => {
+    try {
+      const response = await fetch(
+        "http://localhost:9000/api/v1/all-customers"
+      );
+      const jsonData = await response.json();
+      setAllCustomers(jsonData);
+    } catch (err) {
+      console.err(err.message);
+    }
+  };
+  useEffect(() => {
+    getCustomers;
+  }, []);
   return (
     <>
       <div className="p-4 border border-slate-500 rounded-lg mb-10 ml-2 mr-2 shadow-md">
@@ -78,16 +93,120 @@ export const Customers = () => {
           <table className="w-full whitespace-no-wrap">
             <thead className="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b border-gray-200 dark:border-gray-700 bg-gray-100 dark:text-gray-400 dark:bg-gray-800">
               <tr>
-                <td className="px-4 py-3">Id</td>
-                <td className="px-4 py-3">Joining Date</td>
-                <td className="px-4 py-3">Name</td>
-                <td className="px-4 py-3">Email</td>
-                <td className="px-4 py-3">Phone</td>
+                <td className="px-4 py-3">Customer Id</td>
+                <td className="px-4 py-3">Staff Id</td>
+                <td className="px-4 py-3">Customer Phone</td>
+                <td className="px-4 py-3">Customer Adress</td>
+                <td className="px-4 py-3">Loyalty Points</td>
                 <td className="px-4 py-3 text-right">Actions</td>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-100 dark:divide-gray-700 dark:bg-gray-800 text-gray-700 dark:text-gray-400">
-              <tr className="">
+              {allCustomers.map((customer) => (
+                <tr key={customer.customer_id} className="">
+                  <td className="px-4 py-3">
+                    <span className="font-semibold uppercase text-xs">
+                      {customer.user_id}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3">
+                    <span className="text-sm">{customer.staff_id}</span>
+                  </td>
+                  <td className="px-4 py-3">
+                    <span className="text-sm">{customer.phone_number}</span>
+                  </td>
+                  <td className="px-4 py-3">
+                    <span className="text-sm">{customer.customer_address}</span>
+                  </td>
+                  <td className="px-4 py-3">
+                    <span className="text-sm ">{customer.loyalty_points} </span>
+                  </td>
+                  <td className="px-4 py-3">
+                    <div className="flex justify-end text-right">
+                      <div className="p-2 cursor-pointer text-gray-400 hover:text-green-600">
+                        <a href="/customer-order/650ad8f17cf04b0008912e6c">
+                          <p
+                            data-tip="true"
+                            data-for="view"
+                            className="text-xl"
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="none"
+                              strokeWidth="2"
+                              viewBox="0 0 24 24"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <circle cx="11" cy="11" r="8"></circle>
+                              <line
+                                x1="21"
+                                y1="21"
+                                x2="16.65"
+                                y2="16.65"
+                              ></line>
+                              <line x1="11" y1="8" x2="11" y2="14"></line>
+                              <line x1="8" y1="11" x2="14" y2="11"></line>
+                            </svg>
+                          </p>
+                        </a>
+                      </div>
+                      <div className="flex justify-end text-right">
+                        <button className="p-2 cursor-pointer text-gray-400 hover:text-green-600 focus:outline-none">
+                          <p
+                            data-tip="true"
+                            data-for="edit"
+                            className="text-xl"
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="none"
+                              strokeWidth="2"
+                              viewBox="0 0 24 24"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                            </svg>
+                          </p>
+                        </button>
+                        <button className="p-2 cursor-pointer text-gray-400 hover:text-red-600 focus:outline-none">
+                          <p
+                            data-tip="true"
+                            data-for="delete"
+                            className="text-xl"
+                          >
+                            <svg
+                              stroke="currentColor"
+                              fill="none"
+                              strokeWidth="2"
+                              viewBox="0 0 24 24"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              height="1em"
+                              width="1em"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <polyline points="3 6 5 6 21 6"></polyline>
+                              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                              <line x1="10" y1="11" x2="10" y2="17"></line>
+                              <line x1="14" y1="11" x2="14" y2="17"></line>
+                            </svg>
+                          </p>
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+              {/* <tr className="">
                 <td className="px-4 py-3">
                   <span className="font-semibold uppercase text-xs"> 2e6c</span>
                 </td>
@@ -174,6 +293,7 @@ export const Customers = () => {
                   </div>
                 </td>
               </tr>
+             */}
             </tbody>
           </table>
         </div>

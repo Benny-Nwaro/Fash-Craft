@@ -175,5 +175,4 @@ export {
   checkCustomerEmailExistQuery,
   checkUserExistenceQuery,
   addUserQuery,
-  getCustomers,
 };

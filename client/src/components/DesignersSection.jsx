@@ -12,7 +12,7 @@ export default function DesignersSection() {
   return (
     <>
       <div>
-        <div className="flex flex-row overflow-hidden mb-20  max-w-md mx-auto bg-white rounded-xl shadow-md  md:max-w-7xl w-auto space-x-4 relative">
+        <div className="flex flex-row place-content-center overflow-hidden mb-20 h-96 w-auto  max-w-md  my-24 mx-auto md:px-6 bg-white rounded-xl shadow-md  md:max-w-7xl  space-x-4 relative">
           {" "}
           {designer.map((item) => (
             <div
@@ -21,11 +21,11 @@ export default function DesignersSection() {
               onMouseOver={() => handleDesignerClick(item.id)}
             >
               <img
-                className=" transform hover:translate-x-full transition delay-300 h-52  object-cover ml-2 mt-5 w-52 rounded-lg  cursor-pointer  shadow-2xl absolute"
+                className="transform hover:translate-x-full transition delay-300 h-full  object-cover ml-2 mt-5 w-64 rounded-lg  cursor-pointer  shadow-2xl absolute"
                 src={item.image}
                 alt="Designer Image"
               />
-              <div className="p-4 w-full ">
+              <div className="p-4 w-64 ">
                 <Typography color="blue-gray" className="mb-2 font-medium">
                   {designer[currentIndex].name}
                 </Typography>
