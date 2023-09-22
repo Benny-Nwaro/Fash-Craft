@@ -13,7 +13,7 @@ export const Contact = () => {
         </div>
         <div className=" flex mb-4 max-md:flex-col">
           <div className=" flex flex-col w-3/4 mb-4">
-            <div className="my-8 mx-32 text-4xl text-[#35155D] font-semibold max-md:m-auto max-md:w-full max-md:ml-12 max-md:mb-3" >
+            <div className="my-8 mx-32 text-4xl text-[#35155D] font-semibold max-md:m-auto max-md:w-full max-md:ml-12 max-md:mb-3">
               <p className="font-palanquin">Hey! Let’s Talk</p>
             </div>
             <div className="w-3/4 m-auto text-justify text-lg max-md:mx-12 max-md:w-full">
@@ -71,7 +71,6 @@ export const Contact = () => {
             ></textarea>
           </div>
           <div className="justify-center self-center ">
-            
             <button
               type="submit"
               className="bg-slate-100 text-[#512B81] font-palanquin px-10 py-2 rounded hover:bg-[#512B81] hover:text-slate-100 hover:px-[38px] hover:py-[6px] hover:border-2 hover:border-slate-100 max-md:px-5"
@@ -81,7 +80,6 @@ export const Contact = () => {
           </div>
         </form>
       </div>
-      
     </div>
   );
 };

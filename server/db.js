@@ -1,4 +1,4 @@
-import pkg from 'pg';
+import pkg from "pg";
 const { Pool } = pkg;
 const pool = new Pool({
   user: "postgres",
@@ -8,4 +8,4 @@ const pool = new Pool({
   port: 5432,
 });
 
-export default pool
+export default pool;

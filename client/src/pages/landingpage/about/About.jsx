@@ -103,7 +103,7 @@ export const About = () => {
                 </p>
               </div>
             </div>
-            {/* <div className="text-white content-start">
+            {/* <div classNameNameName="text-white content-start">
               |
             </div> */}
           </div>
