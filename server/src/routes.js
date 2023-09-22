@@ -23,7 +23,7 @@ const router = Router();
 
 router.get("/", verifyToken, testRoute);
 router.get("/all-positions", verifyToken, getCompanyPositions);
-router.post("/add-staff", verifyToken, addStaff);
+router.post("/add-staff", addStaff);
 router.post("/add-customer", verifyToken, addCustomer);
 router.post("/add-order", verifyToken, addOrders);
 router.get("/all-orders", verifyToken, getAllOrders);
