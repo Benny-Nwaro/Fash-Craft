@@ -1,5 +1,6 @@
-import React from "react";
-import { FaBeer,LuLayers } from 'react-icons/fa';
+// import React from "react";
+import { FaBeer } from 'react-icons/fa';
+import DashboardGraph from './DashboardGraph';
 
 const DashBoardCard = () => {
   return (
@@ -9,7 +10,7 @@ const DashBoardCard = () => {
       <div className="flex flex-1 w-full h-full max-sm:w-full  ">
         <div className="w-1/4 h-48 bg-slate-500 rounded-md">
           <div className="m-10 p-5 justify-center items-center text-center">
-            <div className=""><FaBeer /> <LuLayers/>
+            <div className=""><FaBeer fontSize={28} color='white' /> 
             </div>
             <div>Todays order</div>
             <div>$0.00</div>
@@ -17,7 +18,7 @@ const DashBoardCard = () => {
         </div>
         <div className="w-1/4 h-48 ml-4 bg-orange-400 rounded-md">
           <div className="m-10 p-5 justify-center items-center text-center">
-            <div className="">img</div>
+            <div className=""></div>
             <div>Todays order</div>
             <div>$0.00</div>
           </div>
@@ -38,8 +39,8 @@ const DashBoardCard = () => {
         </div>
       </div>
 
-      <div className="flex flex-1 w-full h-full max-sm:w-full my-10 ">
-        <div className="w-1/4 h-28 mr-4 bg-white border border-solid border-gray-200 rounded-md flex  justify-center items-center text-center">
+      <div className="flex items-center justify-between w-full h-full max-sm:w-full my-10 ">
+        <div className="w-1/4 h-28 mr-4 bg-white border border-solid border-gray-200 rounded-md flex items-center justify-center  text-center">
           <div className="w-1/4">img</div>
           <div>
             Total Order <br /> 343
@@ -68,6 +69,7 @@ const DashBoardCard = () => {
           </div>
         </div>
       </div>
+      <DashboardGraph/>
     </div>
   );
 };
