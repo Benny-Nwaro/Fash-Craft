@@ -1,8 +1,9 @@
-// import React from "react";
-import { FaBeer } from 'react-icons/fa';
 import DashboardGraph from './DashboardGraph';
+import DashboardTable from './DashBoardTable';
 
 const DashBoardCard = () => {
+
+
   return (
     <div className="mx-5 bg-[#F8F9FC] p-10">
       {/* <div className='grid gap-4 mb-8 mx-8 md:grid-cols-4 xl:grid-cols-4'> */}
@@ -10,8 +11,7 @@ const DashBoardCard = () => {
       <div className="flex flex-1 w-full h-full max-sm:w-full  ">
         <div className="w-1/4 h-48 bg-slate-500 rounded-md">
           <div className="m-10 p-5 justify-center items-center text-center">
-            <div className=""><FaBeer fontSize={28} color='white' /> 
-            </div>
+            
             <div>Todays order</div>
             <div>$0.00</div>
           </div>
@@ -40,28 +40,28 @@ const DashBoardCard = () => {
       </div>
 
       <div className="flex items-center justify-between w-full h-full max-sm:w-full my-10 ">
-        <div className="w-1/4 h-28 mr-4 bg-white border border-solid border-gray-200 rounded-md flex items-center justify-center  text-center">
+        <div className="w-1/4 h-28 mr-4 bg-white border border-solid border-gray-200 border-l-slate-500 border-l-8 rounded-md flex items-center justify-center  text-center">
           <div className="w-1/4">img</div>
           <div>
             Total Order <br /> 343
           </div>
         </div>
 
-        <div className="w-1/4 h-28 mr-4 bg-white border border-solid border-gray-200 rounded-md flex  justify-center items-center text-center">
+        <div className="w-1/4 h-28 mr-4 bg-white border border-solid border-gray-200 border-l-orange-400 border-l-8 rounded-md flex  justify-center items-center text-center">
           <div className="w-1/4">img</div>
           <div>
             Orders Pending <br /> 96
           </div>
         </div>
 
-        <div className="w-1/4 h-28 mr-4 bg-white border border-solid border-gray-200 rounded-md flex  justify-center items-center text-center">
+        <div className="w-1/4 h-28 mr-4 bg-white border border-solid border-gray-200 border-l-red-400 border-l-8 rounded-md flex  justify-center items-center text-center">
           <div className="w-1/4">img</div>
           <div>
             Orders Processing <br />18
           </div>
         </div>
 
-        <div className="w-1/4 h-28 bg-white border border-solid border-gray-200 rounded-md flex  justify-center items-center text-center">
+        <div className="w-1/4 h-28 bg-white border border-solid border-gray-200 border-l-yellow-500 border-l-8 rounded-md flex  justify-center items-center text-center">
           <div className="w-1/4">img</div>
           <div>
             Orders Delivered
@@ -70,6 +70,8 @@ const DashBoardCard = () => {
         </div>
       </div>
       <DashboardGraph/>
+  <DashboardTable/>
+
     </div>
   );
 };
