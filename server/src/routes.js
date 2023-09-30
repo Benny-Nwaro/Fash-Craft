@@ -23,7 +23,7 @@ const router = Router();
 
 router.get("/", verifyToken, testRoute);
 router.get("/all-positions", verifyToken, getCompanyPositions);
-router.post("/add-staff", verifyToken, addStaff);
+router.post("/add-staff", addStaff);
 router.post("/add-customer", verifyToken, addCustomer);
 router.post("/add-order", verifyToken, addOrders);
 router.get("/all-orders", verifyToken, getAllOrders);
@@ -35,7 +35,11 @@ router.post("/login", login);
 router.get("/all-staff-data", verifyToken, getStaffData);
 router.get("/staff-profile", verifyToken, getSingleStaffData);
 router.get("/all-customers-users", verifyToken, getAllCustomersAndUsersData);
-router.get("/all-customers-user-orders", verifyToken, getAllCustomersAndUserAndOrdersData);
+router.get(
+  "/all-customers-user-orders",
+  verifyToken,
+  getAllCustomersAndUserAndOrdersData
+);
 router.get("/customer-user/:id", verifyToken, getSingleCustomerUserData);
 
 export default router;

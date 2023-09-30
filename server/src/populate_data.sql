@@ -46,3 +46,16 @@ INSERT INTO RolePermissions (role_id, permission_id) VALUES (3, 2);
 
 -- Student(id-4) has only one permission which is student viewing
 INSERT INTO RolePermissions (role_id, permission_id) VALUES (4, 1);
+
+INSERT INTO customers (user_id, staff_id, phone_number, customer_address)
+VALUES
+    (22, 202, '8167203767', 'Lokogoma'),
+    (23, 312, '8167203767', 'Lokogoma'),
+    (24, 512, '8167203767', 'Lokogoma'),
+    (25, 652, '8167203767', 'Lokogoma'),
+    (26, 642, '8167203767', 'Lokogoma'),
+    (27, 732, '8167203767', 'Lokogoma'),
+    (28, 832, '8167203767', 'Lokogoma'),
+    (29, 942, '8167203767', 'Lokogoma'),
+    (30, 121, '8167203767', 'Lokogoma'),
+    (31, 110, '8167203767', 'Lokogoma');

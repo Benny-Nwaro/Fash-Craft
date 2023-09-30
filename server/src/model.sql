@@ -27,7 +27,7 @@ CREATE TABLE users (
     last_name VARCHAR(50),
     is_verified BOOLEAN DEFAULT FALSE,
     role_id INT NOT NULL,
-    FOREIGN KEY (role_id) REFERENCES Role(role_id)
+    FOREIGN KEY (role_id) REFERENCES Roles(role_id)
 ) INHERITS (base_model);
 
 
@@ -50,8 +50,8 @@ CREATE TABLE staffs (
     job_description VARCHAR(150),
     salary INT DEFAULT 0,
     date_employed DATE,
-    phone_number VARCHAR(20) NOT NULL,
-    -- is_verified BOOLEAN DEFAULT FALSE
+    phone_number VARCHAR(20) NOT NULL
+   
 ) INHERITS (base_model);
 
 ALTER TABLE staffs
@@ -70,8 +70,7 @@ CREATE TABLE customers (
     staff_id INT NOT NULL,
     phone_number VARCHAR(20),
     customer_address TEXT,
-    loyalty_points INT DEFAULT 0,
-    -- is_verified BOOLEAN DEFAULT FALSE
+    loyalty_points INT DEFAULT 0
 
 ) INHERITS (base_model);
 

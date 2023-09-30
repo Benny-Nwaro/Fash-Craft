@@ -124,11 +124,7 @@ INNER JOIN customers USING(user_id)
 WHERE user_id = $1;
   `;
 
-
 const getStudentIdQuery = "SELECT * FROM staffs WHERE id = $1";
-
-
-
 
 const getAllCustomersAndUsersAndOrdersDataQuery = `
 SELECT
@@ -155,8 +151,6 @@ INNER JOIN orders o
 INNER JOIN users u 
   ON c.user_id = u.user_id
   `;
-
-
 
 export {
   getAllCustomersAndUsersAndOrdersDataQuery,

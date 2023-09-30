@@ -1,8 +1,8 @@
-import Appli from "../../../components/Content";
+import Content from "../../../components/Content";
 export const Home = () => {
   return (
     <div>
-      <Appli />
+      <Content></Content>
     </div>
   );
 };

@@ -3110,7 +3110,7 @@ export const kanbanData = [
     Assignee: "Nancy Davloio",
     RankId: 1,
     Color: "#02897B",
-    ClassName: "e-story, e-low, e-nancy-davloio",
+    classNameNameName: "e-story, e-low, e-nancy-davloio",
   },
   {
     Id: "Task 2",
@@ -3124,7 +3124,7 @@ export const kanbanData = [
     Assignee: "Andrew Fuller",
     RankId: 1,
     Color: "#673AB8",
-    ClassName: "e-improvement, e-normal, e-andrew-fuller",
+    classNameNameName: "e-improvement, e-normal, e-andrew-fuller",
   },
   {
     Id: "Task 3",
@@ -3138,7 +3138,7 @@ export const kanbanData = [
     Assignee: "Janet Leverling",
     RankId: 2,
     Color: "#1F88E5",
-    ClassName: "e-others, e-critical, e-janet-leverling",
+    classNameNameName: "e-others, e-critical, e-janet-leverling",
   },
   {
     Id: "Task 4",
@@ -3152,7 +3152,7 @@ export const kanbanData = [
     Assignee: "Janet Leverling",
     RankId: 2,
     Color: "#E64A19",
-    ClassName: "e-bug, e-release, e-janet-leverling",
+    classNameNameName: "e-bug, e-release, e-janet-leverling",
   },
   {
     Id: "Task 5",
@@ -3166,7 +3166,7 @@ export const kanbanData = [
     Assignee: "Steven walker",
     RankId: 1,
     Color: "#E64A19",
-    ClassName: "e-bug, e-low, e-steven-walker",
+    classNameNameName: "e-bug, e-low, e-steven-walker",
   },
   {
     Id: "Task 6",
@@ -3180,7 +3180,7 @@ export const kanbanData = [
     Assignee: "Robert King",
     RankId: 1,
     Color: "#673AB8",
-    ClassName: "e-improvement, e-low, e-robert-king",
+    classNameNameName: "e-improvement, e-low, e-robert-king",
   },
   {
     Id: "Task 7",
@@ -3194,7 +3194,7 @@ export const kanbanData = [
     Assignee: "Nancy Davloio",
     RankId: 2,
     Color: "#E64A19",
-    ClassName: "e-bug, e-release, e-nancy-davloio",
+    classNameNameName: "e-bug, e-release, e-nancy-davloio",
   },
   {
     Id: "Task 8",
@@ -3208,7 +3208,7 @@ export const kanbanData = [
     Assignee: "Margaret hamilt",
     RankId: 3,
     Color: "#02897B",
-    ClassName: "e-story, e-low, e-margaret-hamilt",
+    classNameNameName: "e-story, e-low, e-margaret-hamilt",
   },
   {
     Id: "Task 9",
@@ -3222,7 +3222,7 @@ export const kanbanData = [
     Assignee: "Steven walker",
     RankId: 1,
     Color: "#02897B",
-    ClassName: "e-story, e-high, e-steven-walker",
+    classNameNameName: "e-story, e-high, e-steven-walker",
   },
   {
     Id: "Task 10",
@@ -3236,7 +3236,7 @@ export const kanbanData = [
     Assignee: "Margaret hamilt",
     RankId: 4,
     Color: "#02897B",
-    ClassName: "e-story, e-high, e-margaret-hamilt",
+    classNameNameName: "e-story, e-high, e-margaret-hamilt",
   },
   {
     Id: "Task 11",
@@ -3250,7 +3250,7 @@ export const kanbanData = [
     Assignee: "Janet Leverling",
     RankId: 4,
     Color: "#E64A19",
-    ClassName: "e-bug, e-critical, e-janet-leverling",
+    classNameNameName: "e-bug, e-critical, e-janet-leverling",
   },
   {
     Id: "Task 12",
@@ -3264,7 +3264,7 @@ export const kanbanData = [
     Assignee: "Janet Leverling",
     RankId: 4,
     Color: "#02897B",
-    ClassName: "e-story, e-normal, e-janet-leverling",
+    classNameNameName: "e-story, e-normal, e-janet-leverling",
   },
   {
     Id: "Task 13",
@@ -3278,7 +3278,7 @@ export const kanbanData = [
     Assignee: "Andrew Fuller",
     RankId: 4,
     Color: "#02897B",
-    ClassName: "e-story, e-release, e-andrew-fuller",
+    classNameNameName: "e-story, e-release, e-andrew-fuller",
   },
   {
     Id: "Task 14",
@@ -3292,7 +3292,7 @@ export const kanbanData = [
     Assignee: "Margaret hamilt",
     RankId: 1,
     Color: "#02897B",
-    ClassName: "e-story, e-low, e-margaret-hamilt",
+    classNameNameName: "e-story, e-low, e-margaret-hamilt",
   },
   {
     Id: "Task 15",
@@ -3306,7 +3306,7 @@ export const kanbanData = [
     Assignee: "Margaret hamilt",
     RankId: 5,
     Color: "#02897B",
-    ClassName: "e-story, e-high, e-margaret-hamilt",
+    classNameNameName: "e-story, e-high, e-margaret-hamilt",
   },
   {
     Id: "Task 16",
@@ -3320,7 +3320,7 @@ export const kanbanData = [
     Assignee: "Steven walker",
     RankId: 6,
     Color: "#1F88E5",
-    ClassName: "e-others, e-release, e-steven-walker",
+    classNameNameName: "e-others, e-release, e-steven-walker",
   },
   {
     Id: "Task 17",
@@ -3334,7 +3334,7 @@ export const kanbanData = [
     Assignee: "Janet Leverling",
     RankId: 7,
     Color: "#02897B",
-    ClassName: "e-story, e-release, e-janet-leverling",
+    classNameNameName: "e-story, e-release, e-janet-leverling",
   },
   {
     Id: "Task 18",
@@ -3348,7 +3348,7 @@ export const kanbanData = [
     Assignee: "Nancy Davloio",
     RankId: 1,
     Color: "#02897B",
-    ClassName: "e-story, e-critical, e-nancy-davloio",
+    classNameNameName: "e-story, e-critical, e-nancy-davloio",
   },
   {
     Id: "Task 19",
@@ -3362,7 +3362,7 @@ export const kanbanData = [
     Assignee: "Nancy Davloio",
     RankId: 5,
     Color: "#02897B",
-    ClassName: "e-story, e-normal, e-nancy-davloio",
+    classNameNameName: "e-story, e-normal, e-nancy-davloio",
   },
   {
     Id: "Task 20",
@@ -3376,7 +3376,7 @@ export const kanbanData = [
     Assignee: "Andrew Fuller",
     RankId: 5,
     Color: "#673AB8",
-    ClassName: "e-improvement, e-low, e-andrew-fuller",
+    classNameNameName: "e-improvement, e-low, e-andrew-fuller",
   },
   {
     Id: "Task 21",
@@ -3390,7 +3390,7 @@ export const kanbanData = [
     Assignee: "Nancy Davloio",
     RankId: 5,
     Color: "#e91e64",
-    ClassName: "e-epic, e-high, e-nancy-davloio",
+    classNameNameName: "e-epic, e-high, e-nancy-davloio",
   },
   {
     Id: "Task 22",
@@ -3404,7 +3404,7 @@ export const kanbanData = [
     Assignee: "Steven walker",
     RankId: 6,
     Color: "#1F88E5",
-    ClassName: "e-others, e-high, e-steven-walker",
+    classNameNameName: "e-others, e-high, e-steven-walker",
   },
   {
     Id: "Task 23",
@@ -3418,7 +3418,7 @@ export const kanbanData = [
     Assignee: "Janet Leverling",
     RankId: 6,
     Color: "#E64A19",
-    ClassName: "e-bug, e-low, e-janet-leverling",
+    classNameNameName: "e-bug, e-low, e-janet-leverling",
   },
   {
     Id: "Task 24",
@@ -3432,7 +3432,7 @@ export const kanbanData = [
     Assignee: "Steven walker",
     RankId: 1,
     Color: "#E64A19",
-    ClassName: "e-bug, e-critical, e-steven-walker",
+    classNameNameName: "e-bug, e-critical, e-steven-walker",
   },
   {
     Id: "Task 25",
@@ -3446,7 +3446,7 @@ export const kanbanData = [
     Assignee: "Nancy Davloio",
     RankId: 2,
     Color: "#E64A19",
-    ClassName: "e-bug, e-release, e-nancy-davloio",
+    classNameNameName: "e-bug, e-release, e-nancy-davloio",
   },
 ];
 
